@@ -12,6 +12,13 @@ input.onButtonPressed(Button.B, function () {
 let Posição = 0
 let SomMax = 0
 let velocidade = 0
+basic.showLeds(`
+    # . . . .
+    . # . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
 let strip = neopixel.create(DigitalPin.P0, 8, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 strip.setPixelColor(0, neopixel.hsl(0, 90, 40))
